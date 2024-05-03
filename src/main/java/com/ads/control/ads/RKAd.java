@@ -95,11 +95,6 @@ public class RKAd {
         return INSTANCE;
     }
 
-    /**
-     * Set count click to show ads interstitial when call showInterstitialAdByTimes()
-     *
-     * @param countClickToShowAds - default = 3
-     */
     public void setCountClickToShowAds(int countClickToShowAds) {
         Admob.getInstance().setNumToShowAds(countClickToShowAds);
         AppLovin.getInstance().setNumShowAds(countClickToShowAds);
